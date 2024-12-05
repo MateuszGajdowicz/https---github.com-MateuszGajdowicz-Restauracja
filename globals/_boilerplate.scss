@@ -1,0 +1,409 @@
+body {
+    background-color: var(--background-color);
+    margin: 0px;
+    position: relative;
+
+
+}
+
+nav{
+    margin: 0px;
+    z-index: 2000;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex; /* Flexbox do ustawiania elementów w jednym wierszu */
+    justify-content: flex-end; /* Wyrównujemy elementy do prawej strony */
+    color: black;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 3000;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--basic-font);
+    z-index: 3000;
+    
+    
+
+}
+nav a:visited{
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(238, 211, 211);
+
+}
+.dropdown{
+    background-color: pink;
+    position: absolute;
+    right: 170px;
+    top: 49px;
+    opacity: 0;
+    visibility: hidden;
+}
+#menu:hover .dropdown{
+    opacity:1;
+    visibility: visible;
+
+}
+.dropdown a:hover{
+    background-color: antiquewhite;
+}
+
+.DogPhotos:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+#h1{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    font-size: 2rem;
+    font-family:var(--basic-font)
+}
+.tlo{
+    top: 49px;
+    position: absolute;
+    background-color: #cd8f76;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+    
+    img{
+        height: 100%;
+        border-radius: 1000px;
+    }
+}
+#puppy1{
+    height: 400px;
+    position: absolute;
+    right:5%;
+}
+#puppy2{
+    height: 400px;
+    position: absolute;
+    left: 5%;
+  
+}
+
+
+.Opiscontainer{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    top:600px;
+    z-index: -1;
+    box-shadow: var(--shadow);
+    img{
+        width: 100%;
+        transition: 0.5s ease;
+    }
+    img:hover{
+        transform: scale(1.1);
+    }
+    
+}
+.opis{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    top: 600px;
+    left: 7%;
+    height: 600px;
+    width: 500px;
+    opacity: 0.8;
+    font-family: var(--basic-font);
+
+    h1{
+        margin:40px;
+    }
+    p{
+        margin: 40px;
+        font-size: 1.5rem
+    }
+}
+.MenuContainer#menu1{
+    height: 1300px;
+    background-color: #eebfad;
+}
+.MenuContainer{
+    width: 100%;
+    position: relative; /* Zmieniono na relative, by elementy wewnątrz mogły korzystać z absolute */
+    top: 1250px;
+    margin-bottom: 50px;
+    box-shadow: var(--shadow);
+    font-family: var(--basic-font);
+    z-index: 1;
+    overflow: visible;
+    .MenuNapis{
+        background-color: #ffe4da;
+        width: 100%;
+        height: 100px;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+        h1{
+            
+            font-size: 3.5rem;
+            margin-left: 150px;
+            }
+        }
+        h2{
+            font-size: 3rem;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .PotrawyContainerLeft{
+            position: relative;
+            background-color: white;
+            opacity: 0.8;
+            width: 50%;
+            height: 300px;
+            box-shadow: var(--shadow2); 
+            ;
+            h1{
+                margin-left: 50px;
+                width: 50%;
+            }
+            p{
+                font-size: 1.3rem;
+                margin-left: 50px;
+                width: 40%;
+            }
+            img{
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                right:0;
+                top:0;
+            }
+        
+        }
+        .PotrawyContainerRight{
+            background-color: white;
+            opacity: 0.8;
+            width: 50%;
+            height:300px;
+            margin-right: 0;
+            margin-left: auto;
+            margin-top: 0px;
+            position:relative;
+
+            text-align: right;
+            box-shadow: var(--shadow2); 
+
+            h1{
+                margin-left: 45%;
+                width: 50%;
+            }
+            p{
+                font-size: 1.3rem;
+                width: 40%;
+                margin-left: 55%;
+            }
+            img{
+                height: 300px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+        }
+        #RetrieverPicture{
+            position: absolute;
+            right: 150px;
+            top:250px;
+        }
+        #DalmatianPicture{
+            width: 300px;
+            position: absolute;
+    
+            top:  600px;
+            left:100px;
+        }
+        #ChiPicture{
+            width: 300px;
+            position:absolute;
+    
+            right: 200px;  
+            top: 900px;
+
+
+        }
+
+}
+
+.gallery{
+    position:relative;
+    top:1270px;
+    background-color: rgb(248, 220, 220);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:var(--shadow);
+    overflow: hidden;
+    font-family: var(--basic-font);
+    font-size: 1.5em;
+    h1{
+        position: absolute;
+        top: 20px;
+    }
+    .images{
+        display: flex; /* Flexbox dla obrazków */
+        justify-content: center;
+        align-items: center;
+        gap: 50px; /* Odstęp między obrazkami */
+        transition: transform 0.5s ease; 
+    }
+    img{
+        width: 400px;
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+        transition: 0.3s;
+        
+    }
+    img:hover{
+        transform: scale(1.05)
+       }
+    button{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        font-size: 2em;
+        bottom: 40px;
+        background-color: rgb(255, 170, 184);
+        border: 3px rgb(10, 10, 10) solid;
+        transition: 0.3s;
+        }
+
+    #button1{
+        left: 40%;
+        }
+    #button2{
+        right: 40%;
+
+    }
+}
+button:hover{
+    background-color: rgb(250, 126, 151);
+    transform: scale(1.1);
+
+}
+
+.footer{
+    position:relative;
+    top: 1350px;
+    background-color: rgb(250, 216, 186);
+    height: 450px;
+    flex-shrink: 0;
+    font-family: var(--basic-font);
+    overflow: hidden;
+    .follow{
+        position: absolute;
+        font-size: 1.5em;
+        left: 9%;
+    }
+    #p1{
+        top: 40px;
+        font-weight: bold;
+
+    }
+    #p2{
+        top:150px;
+        left: 11%;
+        font-weight: bold;
+
+    }
+    #p3{
+        top: 180px;
+    }
+    #p4{
+        top: 210px;
+        left: 7%;
+    }
+    #p6{
+        top: 250px;
+        left: 8.5%;
+        font-weight: bold;
+    }
+    img{
+        width:50px;
+        position: absolute;
+        top:110px;
+    }
+    #fb{
+        left: 120px;
+    }
+    #ig{
+        left: 170px;
+        width: 65px;
+        top: 105px;
+    }
+    #x{
+        left:240px;
+    }
+    img:hover{
+        filter: brightness(80%);
+    }
+    .Hours1{
+        top: 10%;
+        position: absolute;
+        left: 25%;
+        width: 300px;
+        height: 100px;
+
+        p{
+            top:0%;
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+        li{
+            list-style-type: none;
+            font-size: 1.5em;
+            text-align: left;
+        }
+        #p5{
+            position: absolute;
+            left: 10%;
+
+        }
+
+    }
+    .Hours2{
+        top: 20%;
+        position: relative;
+        left: 50%;
+        height: 100px;
+        width: 150px;
+
+        }
+        li{
+            list-style-type: none;
+            font-size: 1.5em;
+            text-align: end;
+        }
+    .mapa{
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        height: 400px;
+
+    }
+    }
